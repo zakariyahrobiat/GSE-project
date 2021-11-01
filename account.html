@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all_product_bookstore</title>
+    <link rel="stylesheet"  type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="header">
+      <img src="images/boook.jpg"> 
+      </div>
+    <!-- <div class="container"> -->
+      <!-- <div class="navbar"> -->
+        <div class="logo">
+          <a href="index.html">
+          <img src="images/logo.png" alt="logo image" width="125px"></a>
+        </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="product.html">PRODUCT</a></li>
+        
+              <li><a href="account.html">ACCOUNT</a></li>
+            </ul>
+            
+          
+         
+          <a href="cart.html">
+          <img src="images/cart.png" alt="" ></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+          </nav>
+          
+
+
+      </div>
+
+
+
+      </div>
+
+   <!---Accountpage--->
+   <div class="account-page">
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      <!-- <img src="images/logol1.jpg" width="100%"> -->
+
+    </div>
+    <div class="col">
+    <div class="form-container">
+      <div class="form-btn">
+        <span onclick="login()">Login</span>
+        <span onclick="register()">Register</span>
+        <hr id="Indicator">
+
+      </div>
+      <form id="Loginform" action="index.html" method="post">
+        <input type="text" name="" value="" placeholder="Username">
+        <input type="password" name="" value="" placeholder="Password">
+        <button type="submit" name="button" class="btn">Login</button><br>
+        <a href="#">Forgot Password</a>
+      </form>
+
+
+      <form id="Regform" action="index.html" method="post">
+        <input type="text" name="" value="" placeholder="Username">
+          <input type="email" name="" value="" placeholder="Email">
+        <input type="password" name="" value="" placeholder="Password">
+        <button type="submit" name="button" class="btn">Register</button>
+
+      </form>
+
+    </div>
+
+    </div>
+
+  </div>
+
+</div>
+   </div>
+<!--- footer--->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download our app</h3>
+        <p>Download our App for Android and IOS mobile phone.</p>
+        <div class="app-logo">
+          <img src="images/app-store.png" alt="">
+          <img src="images/play-store.png" alt="">
+
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <h3>Useful links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog post</li>
+          <li>Return policy</li>
+          <li>join affliate</li>
+        </ul>
+      </div>
+      <div class="footer-col-3">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </div>
+<hr>
+<p class="copyright">  &copy 2021 - Bookstore.ng </p>
+
+  </div>
+
+</div>
+
+<!--- js for toggle menu--->
+<script type="text/javascript">
+  var MenuItems = document.getElementById("MenuItems");
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == "0px") {
+      MenuItems.style.maxHeight = "200px";
+    }else{
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+</script>
+
+
+
+<!--- js for toggle form --->
+
+
+  <script type="text/javascript">
+    var Loginform = document.getElementById("Loginform");
+    var Regform = document.getElementById("Regform");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+      Regform.style.transform = "translateX(0px)";
+      Loginform.style.transform = "translateX(0px)";
+      Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+      Regform.style.transform = "translateX(300px)";
+      Loginform.style.transform = "translateX(300px)";
+      Indicator.style.transform = "translateX(0px)";
+    }
+
+</script>
+
+  </body>
+</html>

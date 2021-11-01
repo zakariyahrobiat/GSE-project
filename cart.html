@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all_product_bookstore</title>
+    <link rel="stylesheet"  type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <!-- <img src="images/boook.jpg"> -->
+      </div>
+    <!-- <div class="container"> -->
+      <!-- <div class="navbar"> -->
+        <div class="logo">
+          <a href="index.html">
+          <img src="images/logo.png" alt="logo image" width="125px"></a>
+        </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="product.html">PRODUCT</a></li>
+        
+              <li><a href="account.html">ACCOUNT</a></li>
+            </ul>
+            
+          
+         
+          <a href="cart.html">
+          <img src="images/cart.png" alt="" ></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+          </nav>
+          
+
+
+      </div>
+
+    
+
+      <!--- cart items details--->
+      <div class="small-container cart-page">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <td><div class="cart-info">
+              <img src="images/prod1.jpg" >
+              <div class="">
+                <p>Book1</p>
+                <small>Price: #5000</small>
+                <br>
+                <a href="#">Remove</a>
+              </div>
+            </div></td>
+            <td><input type="number" name="" value="1"></td>
+            <td>#5000</td>
+          </tr>
+          <tr>
+            <td><div class="cart-info">
+              <img src="images/prod2.jpeg" >
+              <div class="">
+                <p>Book2</p>
+                <small>Price: #3000</small>
+                <br>
+                <a href="#">Remove</a>
+              </div>
+            </div></td>
+            <td><input type="number" name="" value="1"></td>
+            <td>#3000</td>
+          </tr>
+          <tr>
+            <td><div class="cart-info">
+              <img src="images/prod3.jpeg" >
+              <div class="">
+                <p>Book3</p>
+                <small>Price: #4000</small>
+                <br>
+                <a href="#">Remove</a>
+              </div>
+            </div></td>
+            <td><input type="number" name="" value="1"></td>
+            <td>#4000</td>
+          </tr>
+        </table>
+        <div class="total-price">
+          <table>
+            <tr>
+              <td>Subtotal</td>
+              <td>#12000</td>
+            </tr>
+            <tr>
+              <td>VAT</td>
+              <td>#500</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>#12500</td>
+            </tr>
+          </table>
+
+        </div>
+
+      </div>
+
+<!--- footer--->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download our app</h3>
+        <p>Download our App for Android and IOS mobile phone.</p>
+        <div class="app-logo">
+          <img src="images/app-store.png" alt="">
+          <img src="images/play-store.png" alt="">
+
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <h3>Useful links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog post</li>
+          <li>Return policy</li>
+          <li>join affliate</li>
+        </ul>
+      </div>
+      <div class="footer-col-3">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </div>
+<hr>
+<p class="copyright">  &copy 2021 - Bookstore.ng </p>
+
+  </div>
+
+</div>
+
+<!--- js for toggle menu--->
+<script type="text/javascript">
+  var MenuItems = document.getElementById("MenuItems");
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == "0px") {
+      MenuItems.style.maxHeight = "200px";
+    }else{
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+</script>
+  </body>
+</html>

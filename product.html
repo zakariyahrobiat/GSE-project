@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all_product_bookstore</title>
+    <link rel="stylesheet"  type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <!-- <img src="images/boook.jpg"> -->
+      </div>
+    <!-- <div class="container"> -->
+      <!-- <div class="navbar"> -->
+        <div class="logo">
+          <a href="index.html">
+          <img src="images/logo.png" alt="logo image" width="125px"></a>
+        </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="product.html">PRODUCT</a></li>
+        
+              <li><a href="account.html">ACCOUNT</a></li>
+            </ul>
+            
+          
+         
+          <a href="cart.html">
+          <img src="images/cart.png" alt="" ></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+          </nav>
+          
+
+
+      </div>
+
+
+
+      </div>
+
+      <div class="small-container">
+        <div class="roww">
+          <h2>All Products</h2>
+          <select class="" name="">
+            <option value="">default sorting</option>
+            <option value="">sort by price</option>
+            <option value="">sort  by popularity</option>
+            <option value="">sort by sales</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <a href="product-detail.html"><img src="images/prod1.jpg" alt=""></a>
+            <a href="product-detail.html"><h4>book1 </h4></a>
+            <p>#5000</p>
+          </div>
+          <div class="col-3">
+            <img src="images/prod2.jpeg" alt="">
+            <h4>book2</h4>
+            <p>#3000</p>
+          </div>
+          <div class="col-3">
+            <img src="images/prod3.jpeg" alt="">
+            <h4>book3</h4>
+            <p>#4000</p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <img src="images/prod4.jpeg" alt="">
+            <h4>book4 </h4>
+            <p>#1000</p>
+          </div>
+          <div class="col-3">
+            <img src="images/prod5.jpeg" alt="">
+            <h4>book5</h4>
+            <p>#2000</p>
+          </div>
+          <div class="col-3">
+            <img src="images/prod6.jpeg" alt="">
+            <h4>book6</h4>
+            <p>#7000</p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <img src="images/prod7.jpeg" alt="">
+            <h4>book7 </h4>
+            <p>#500</p>
+          </div>
+          <div class="col-3">
+            <img src="images/prod8.jpeg" alt="">
+            <h4>book8</h4>
+            <p>#3500</p>
+          </div>
+          <div class="col-3">
+            <img src="images/prod9.jpeg" alt="">
+            <h4>book9</h4>
+            <p>#4500</p>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <img src="images/prod10.jpeg" alt="">
+            <h4>book10 </h4>
+            <p>#5000</p>
+          </div>
+          <div class="col-3">
+            <img src="images/prod11.jpeg" alt="">
+            <h4>book11</h4>
+            <p>#3700</p>
+          </div>
+          <div class="col-3">
+            <img src="images/prod13.jpg" alt="">
+            <h4>book12</h4>
+            <p>#4200</p>
+          </div>
+
+        </div>
+      <div class="page-btn">
+<span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>&#8594</span>
+      </div>
+
+
+
+<!--- footer--->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download our app</h3>
+        <p>Download our App for Android and IOS mobile phone.</p>
+        <div class="app-logo">
+          <img src="images/app-store.png" alt="">
+          <img src="images/play-store.png" alt="">
+
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <h3>Useful links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog post</li>
+          <li>Return policy</li>
+          <li>join affliate</li>
+        </ul>
+      </div>
+      <div class="footer-col-3">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </div>
+<hr>
+<p class="copyright">  &copy 2021 - Bookstore.ng </p>
+
+  </div>
+
+</div>
+
+<!--- js for toggle menu--->
+
+
+<script type="text/javascript">
+  var MenuItems = document.getElementById("MenuItems");
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == "0px") {
+      MenuItems.style.maxHeight = "200px";
+    }else{
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+</script>
+  </body>
+</html>
